@@ -121,7 +121,7 @@ class BookList(Resource):
 
 api.add_resource(BookList, "/books")
 api.add_resource(Book, "/books/<int:id>")
-api.add_resource(Book, "/books/<String:title>")
+api.add_resource(Book, "/books/<str:title>")
 
 
 if __name__ == "__main__":
